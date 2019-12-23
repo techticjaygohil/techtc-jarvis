@@ -1,0 +1,31 @@
+{
+    "name": "techtic/jarvis",
+    "description": "APi for User module.",
+    "type": "metapackage",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jay Gohil",
+            "email": "techtic.jaygohil@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Jarvis\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jarvis\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jarvis\\JarvisServiceProvider"
+            ]
+        }
+    },
+    "require": {}
+}
