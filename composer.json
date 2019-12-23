@@ -20,6 +20,13 @@
             "Jarvis\\Test\\": "tests"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jarvis\\JarvisServiceProvider"
+            ]
+        }
+    },
     "require": {
         "benwilkins/laravel-fcm-notification": "dev-master",
         "intervention/image": "^2.5",
