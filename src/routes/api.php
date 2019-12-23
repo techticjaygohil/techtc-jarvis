@@ -4,7 +4,7 @@ $namespace = 'Jarvis\Http\Controllers';
 
 Route::group([
     'namespace' => $namespace,
-    'prefix' => 'jarvis/api',
+    'prefix' => 'api/',
 ], function () {
  Route::get('/', function(){
      return ['hello','this is jarwis api route']; 
@@ -12,4 +12,10 @@ Route::group([
  Route::get('/test', function(){
      return 'this is jarwis test api route'; 
  });
+
+Route::post('signup', 'UserController@register');
+/*Route::post('login', 'UserController@authenticate');
+Route::post('logout', 'UserController@logout');
+Route::post('forgot-password', 'UserController@forgetPassword');*/
+ 
 });

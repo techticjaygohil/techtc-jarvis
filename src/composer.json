@@ -27,5 +27,10 @@
             ]
         }
     },
-    "require": {}
+    "require": {
+        "benwilkins/laravel-fcm-notification": "dev-master",
+        "intervention/image": "^2.5",
+        "spatie/laravel-permission": "^3.3",
+        "tymon/jwt-auth": "^1.0"
+    }
 }
