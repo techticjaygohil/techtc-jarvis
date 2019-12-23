@@ -10,9 +10,7 @@ class JarvisServiceProvider extends ServiceProvider {
     
     public function boot() {
         Schema::defaultStringLength('191');
-        // $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
         $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
-        // $this->loadViewsFrom(__DIR__ . '/resources/views', 'jarvisview');
     }
     
     public function register()
