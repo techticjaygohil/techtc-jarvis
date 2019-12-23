@@ -23,8 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "App\\Providers\\ResponseMacroServiceProvider",
-                "App\\Providers\\RouteServiceProvider"
+                //
             ]
         }
     },
