@@ -1,6 +1,6 @@
 <?php
 
-namespace Jarwis\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -16,14 +16,14 @@ class Role extends Model
      */
     public function modelHasRoles()
     {
-        return $this->hasMany('App\Models\ModelHasRole');
+        return $this->hasMany(ModelHasRole::class);
     }
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
-    public function permissions()
+    /* public function permissions()
     {
-        return $this->belongsToMany('App\Models\Permission', 'role_has_permissions');
-    }
+        return $this->belongsToMany(Permission::class, 'role_has_permissions');
+    } */
 }

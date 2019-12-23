@@ -1,23 +1,22 @@
 <?php
+namespace App\Api\Controllers;
 
-namespace Jarvis\Http\Controllers;
-
-use Jarvis\Http\Requests\Auth\LoginRequest;
-use Jarvis\Http\Requests\Auth\RegisterRequest;
-use Jarvis\Http\Requests\Auth\ForgetPasswordRequest;
-use Jarvis\Http\Requests\Auth\UpdateRegisterRequest;
-use Jarvis\Http\Requests\Auth\ChangePasswordRequest;
-use Jarvis\Http\Requests\SetPasswordRequest;
+use App\Api\Requests\Auth\LoginRequest;
+use App\Api\Requests\Auth\RegisterRequest;
+use App\Api\Requests\Auth\ForgetPasswordRequest;
+use App\Api\Requests\Auth\UpdateRegisterRequest;
+use App\Api\Requests\Auth\ChangePasswordRequest;
+use App\Api\Requests\SetPasswordRequest;
 use App\Http\Controllers\Controller;
-use Jarwis\models\DeviceToken;
-use Jarwis\models\Role;
-use Jarwis\models\User;
+use App\Models\User;
 use Carbon\Carbon;
+use App\Models\DeviceToken;
 use Illuminate\Http\Request;
+use App\Models\Role;
 use Illuminate\Support\Facades\Hash;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Illuminate\Support\Facades\Auth;
-use Jarwis\Notifications\ForgetPasswordNotification;
+use App\Notifications\ForgetPasswordNotification;
 use Tymon\JWTAuth\Exceptions\JWTException;
 
 /**
@@ -68,9 +67,9 @@ class UserController extends Controller {
             }
 
             return response()->success( [
-                'status_code' =>  200,
                 'data' => $user,
-                'token' => $token
+                'token' => $token,
+                'status_code' =>  200,
             ] );
 
         } catch ( JWTException $e ) {

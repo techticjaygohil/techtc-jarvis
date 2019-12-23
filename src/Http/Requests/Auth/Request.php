@@ -1,8 +1,10 @@
 <?php
 
-namespace Jarvis\Http\Requests\Auth;
+namespace App\Api\Requests\Auth;
 
-class Request extends Request
+use Illuminate\Foundation\Http\FormRequest;
+
+class Request extends FormRequest
 {
 
     public function authorize()

@@ -1,6 +1,6 @@
 <?php
 
-namespace Jarvis\Http\Requests\Auth;
+namespace App\Api\Requests\Auth;
 
 class ForgetPasswordRequest extends Request
 {

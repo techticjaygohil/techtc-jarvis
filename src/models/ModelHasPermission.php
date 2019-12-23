@@ -1,6 +1,6 @@
 <?php
 
-namespace Jarwis\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,8 +20,8 @@ class ModelHasPermission extends Model
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function permission()
-    {
-        return $this->belongsTo('App\Models\Permission');
-    }
+    // public function permission()
+    // {
+    //     return $this->belongsTo(Permission::class);
+    // }
 }

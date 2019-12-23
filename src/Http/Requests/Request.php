@@ -1,6 +1,6 @@
 <?php
 
-namespace Jarvis\Http\Requests;
+namespace App\Api\Requests;
 
 // use Illuminate\Http\Request as FormRequest;
 use Illuminate\Foundation\Http\FormRequest;

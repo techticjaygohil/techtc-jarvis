@@ -1,12 +1,12 @@
 <?php
 
-namespace Jarwis\models;
+namespace App\Models;
 
-use Jarwis\Traits\FileUploadTrait;
+use App\Traits\FileUploadTrait;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Backpack\CRUD\CrudTrait;
+// use Backpack\CRUD\CrudTrait;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Foundation\Auth\User as Authenticatable;

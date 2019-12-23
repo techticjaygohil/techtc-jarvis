@@ -1,5 +1,5 @@
 <?php
-namespace Jarwis\Traits;
+namespace App\Traits;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Config;

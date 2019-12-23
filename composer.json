@@ -23,7 +23,9 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jarvis\\JarvisServiceProvider"
+                "Jarvis\\JarvisServiceProvider",
+                "App\\Providers\\ResponseMacroServiceProvider",
+                "App\\Providers\\RouteServiceProvider"
             ]
         }
     },

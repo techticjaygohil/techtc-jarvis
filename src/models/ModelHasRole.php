@@ -1,6 +1,6 @@
 <?php
 
-namespace Jarwis\models;
+namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -23,6 +23,6 @@ class ModelHasRole extends Model
      */
     public function role()
     {
-        return $this->belongsTo('App\Models\Role');
+        return $this->belongsTo(Role::class);
     }
 }
